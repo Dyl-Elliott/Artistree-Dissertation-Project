@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recommendations</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- danfojs -->
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@1.1.2/lib/bundle.js"></script>
+
+    <!-- axios (for testing suite)-->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="recommendation.css" />
+    <!-- <script type="module" src="../script.js" defer></script> -->
+    <script type="module" src="recommendation.js" defer></script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="navbar_container container-fluid">
+        <ul class="navbar_items">
+          <li class="navbar_list_item"><p id="home_text">Home</p></li>
+          <!-- <li class="navbar_list_item"><a href="">Playlist</a></li>
+          <li class="navbar_list_item"><a href="">Discover</a></li> -->
+        </ul>
+        <ul class="nav_login">
+          <li class="navbar_list_item">
+            <!-- <a href="/login.html">Log in</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="no_more_recommendations_message"></div>
+
+    <div class="buttons_container">
+      <div class="refresh_page_for_new_results">
+        <button class="refresh_page_button">Refresh for more recommendations!</button>
+      </div>
+
+      <div class="playlist_buttons_container">
+        <button id="get_playlist_button">Get Your Playlists To Add To!</button>
+        <!-- <span class="">or</span> -->
+        <button id="create_playlist_button">Create A New Playlist!</button>
+      </div>
+    </div>
+
+    <!-- <div id="recommendation_counter_output"></div> -->
+    <div id="plot_div"></div>
+
+    <ul id="playlist_items_container"></ul>
+
+    <div class="recommendation_header"><p>Here are your list of 20 Recommendations!</p></div>
+
+    <div id="recommendations"></div>
+  </body>
+</html>

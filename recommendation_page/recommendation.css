@@ -1,0 +1,238 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* p {
+  font-size: 20px;
+  color: aliceblue;
+} */
+
+img {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+/*------------------------------------Navbar---------------------------------------*/
+.navbar {
+  width: 100%;
+  height: 100%;
+}
+.navbar_container {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  letter-spacing: 1px;
+
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_items {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_list_item {
+  display: inline;
+  padding: 10px 10px 10px 0px;
+}
+.nav_login {
+  margin-bottom: 0px;
+}
+
+.recommendation_header {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#recommendation_counter_output {
+  text-align: center;
+}
+
+#home_text {
+  color: aliceblue;
+  margin: 0;
+  cursor: pointer;
+}
+
+/*------------------------------------REFRESH---------------------------------------*/
+
+.buttons_container {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.refresh_page_for_new_results {
+  margin: 10px;
+
+  display: flex;
+}
+.refresh_page_button {
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 16px;
+
+  text-align: center;
+  text-decoration: none;
+}
+/* .refresh_page_button {
+  margin: 0 auto;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/*------------------------------------PLAYLIST---------------------------------------*/
+
+.playlist_buttons_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#get_playlist_button {
+  margin: 5px 5px;
+  padding: 10px 20px;
+  border-radius: 16px;
+
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#create_playlist_button {
+  margin: 5px 5px;
+  padding: 10px 20px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+}
+#playlist_items {
+  overflow-y: auto;
+  display: inline-block;
+}
+#playlist_items_container {
+  width: 750px;
+  max-height: 250px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0px;
+
+  text-align: center;
+  overflow-y: auto;
+}
+@media screen and (max-width: 800px) {
+  #playlist_items_container {
+    width: 410px;
+  }
+}
+.playlist_item {
+  cursor: pointer;
+}
+.playlist_item_name {
+  margin-bottom: 5px;
+}
+
+/*------------------------------------RECOMMENDATIONS---------------------------------------*/
+#recommendations {
+  margin: 0 auto;
+
+  width: 94%;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.artist_dropdown_item {
+  height: 100%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.recommendation_list {
+  font-weight: bold;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  max-width: 400px;
+  min-width: 350px;
+
+  border: 1px darkgrey solid;
+  background-color: antiquewhite;
+  margin-bottom: 30px;
+
+  width: fit-content;
+}
+.drop_down_image_box {
+  text-align: center;
+}
+
+.artist_name {
+  text-align: center;
+}
+
+/*------------------------------------TOP TRACK ITEMS---------------------------------------*/
+
+.top_tracks_box {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+.top_tracks_container {
+  margin: 2px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.track_list_item {
+  display: flex;
+  text-align: initial;
+}
+.add_to_playlist_button {
+  width: 4rem;
+  min-width: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
